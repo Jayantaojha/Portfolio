@@ -110,7 +110,7 @@ function showApps() {
 
                             <a href="https://image-search-jayanta-ojha.netlify.app/"><div id="app8" ><i class="fa-solid fa-magnifying-glass" style="font-size: 26px; margin-left: 22px; text-align: center; "></i><p style="font-size: 12px">Image Search</p></div></a>
 
-                            <a href="music.html"><div id="app9" style="margin-right: 6px;"><i class="fa-solid fa-music" style="font-size: 24px; margin-left: 4px; "></i><p style="font-size: 12px">Music</p></div></a>
+                            <a href="https://jayantaojha.github.io/Music-Player/disc/"><div id="app9" style="margin-right: 6px;"><i class="fa-solid fa-music" style="font-size: 24px; margin-left: 4px; "></i><p style="font-size: 12px">Music</p></div></a>
 
                             `
 
@@ -266,7 +266,7 @@ setInterval(slideImage, 3000);
 // Music player
 const musicPlayer = document.querySelector('#music-player-div');
 musicPlayer.addEventListener('click', () => {
-    window.location.href = "https://jayantaojha.github.io/Frontend-Projects/Portfolio/disc/music.html";
+    window.location.href = "https://jayantaojha.github.io/Music-Player/disc/";
 })
 
 
