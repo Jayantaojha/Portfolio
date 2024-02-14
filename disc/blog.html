@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        /* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #e90e65;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+.blog-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.blog-post {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.post-info h2 {
+    margin-bottom: 5px;
+}
+
+.post-date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.read-more {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+
+    </style>
+    
+</head>
+
+<body>
+    <header>
+        <h1>My Blog</h1>
+    </header>
+
+    <main>
+        <section class="blog-posts">
+            <article class="blog-post">
+                <img src="post1.jpg" alt="Post 1">
+                <div class="post-info">
+                    <h2>Post Title 1</h2>
+                    <p class="post-date">Published on January 1, 2024</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis quis massa id elementum.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </article>
+
+            <article class="blog-post">
+                <img src="post2.jpg" alt="Post 2">
+                <div class="post-info">
+                    <h2>Post Title 2</h2>
+                    <p class="post-date">Published on January 5, 2024</p>
+                    <p>Sed ultricies dui vitae faucibus convallis. Nulla facilisi. Integer eu nisi at ligula fringilla lacinia.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </article>
+            <!-- Add more blog posts as needed -->
+        </section>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        /* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #e90e65;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+.notifications {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.notification {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.notification-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.timestamp {
+    color: #888;
+    font-size: 14px;
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Notifications</h1>
+    </header>
+
+    <main>
+        <section class="notifications">
+            <div class="notification">
+                <div class="notification-header">
+                    <h3>Important Update</h3>
+                    <span class="timestamp">3 hours ago</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis quis massa id elementum.</p>
+            </div>
+
+            <div class="notification">
+                <div class="notification-header">
+                    <h3>New Message</h3>
+                    <span class="timestamp">Yesterday</span>
+                </div>
+                <p>Sed ultricies dui vitae faucibus convallis. Nulla facilisi. Integer eu nisi at ligula fringilla lacinia.</p>
+            </div>
+
+            <div class="notification">
+                <div class="notification-header">
+                    <h3>New Message</h3>
+                    <span class="timestamp">Yesterday</span>
+                </div>
+                <p>Sed ultricies dui vitae faucibus convallis. Nulla facilisi. Integer eu nisi at ligula fringilla lacinia.</p>
+            </div>
+
+            <div class="notification">
+                <div class="notification-header">
+                    <h3>New Message</h3>
+                    <span class="timestamp">Yesterday</span>
+                </div>
+                <p>Sed ultricies dui vitae faucibus convallis. Nulla facilisi. Integer eu nisi at ligula fringilla lacinia.</p>
+            </div>
+
+
+            <div class="notification">
+                <div class="notification-header">
+                    <h3>New Message</h3>
+                    <span class="timestamp">Yesterday</span>
+                </div>
+                <p>Sed ultricies dui vitae faucibus convallis. Nulla facilisi. Integer eu nisi at ligula fringilla lacinia.</p>
+            </div>
+
+            <!-- Add more notifications as needed -->
+        </section>
+    </main>
+
+</body>
+
+</html>
