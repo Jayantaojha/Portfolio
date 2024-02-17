@@ -1,126 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Projects</title>
-    <!-- <link rel="stylesheet" href="styles.css"> -->
-    <style>
-        /* Reset default margin and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <title>Projects</title>
+    <link rel="stylesheet" href="projects.css">
 
-/* Basic styling for the body */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-}
+    <!-- font awasome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-/* Header styles */
-header {
-    background-color: #e90e65;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
 
-header h1 {
-    margin: 0;
-    font-size: 2em;
-}
-
-/* Main content styles */
-main {
-    padding: 20px;
-}
-
-.notifications {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px;
-}
-
-.notification {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.notification-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.timestamp {
-    color: #888;
-    font-size: 14px;
-}
-
-    </style>
 </head>
 
-<body>
+
+<body class="bg-slate-800">
+    
     <header>
-        <h1>All Projects</h1>
+        <h1 class="text-white text-center text-2xl md:text-3xl font-semibold mt-5 mb-6">All Projects</h1>
     </header>
 
-    <main>
-        <section class="notifications">
-            <div class="notification">
-                <div class="notification-header">
-                    <h3>Important Update</h3>
-                    <span class="timestamp">3 hours ago</span>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis quis massa id elementum.</p>
+    <!-- all projects -->
+    <main class="flex flex-col md:flex-row md:justify-around gap-8 md:gap-y-16 items-center md:flex-wrap md:items-start md:pl-10 md:pr-10 mb-8 md:mt-10">
+
+        <!-- project 1 -->
+        <div class="text-black bg-white flex flex-col w-[80vw] md:w-[25vw] rounded-md pb-3">
+
+            <div class="p-5 max-h-[40vh] overflow-hidden">
+                <img src="music-player.png" class="rounded-lg">
+            </div>
+            <h2 class="text-center text-xl font-bold mb-2 mt-3">Music Player</h2>
+            <p class="text-[#656253] p-3 text-center">Experience high quality music online.</p>
+            <div class="flex p-3 justify-around">
+                <a href="https://jayantaojha.github.io/Music-Player/disc/" target="_blank"><button class="bg-[#334E58] text-white p-2 w-[110px] rounded-md cursor-pointer">Try It <i class="fa-solid fa-arrow-right ml-2"></i></button></a>
+
+                <a href="https://github.com/Jayantaojha/Music-Player" target="_blank"><button class="bg-black text-white p-2 w-[110px] rounded-md cursor-pointer">GitHub</button></a>
             </div>
 
-            <div class="notification">
-                <div class="notification-header">
-                    <h3>New Message</h3>
-                    <span class="timestamp">Yesterday</span>
-                </div>
-                <p>Sed ultricies dui vitae faucibus convallis. Nulla facilisi. Integer eu nisi at ligula fringilla lacinia.</p>
+        </div>
+
+        <!-- project 2 -->
+        <div class="text-black bg-white flex flex-col w-[80vw] md:w-[25vw] rounded-md pb-3">
+
+            <div class="p-5 max-h-[40vh] overflow-hidden">
+                <img src="river.jpg" class="rounded-lg">
+            </div>
+            <h2 class="text-center text-xl font-bold mb-2 mt-2">Image Search</h2>
+            <p class="text-[#656253] p-3 text-center">Search high quality images.</p>
+            <div class="flex p-3 justify-around">
+                <a href="https://image-search-jayanta-ojha.netlify.app/" target="_blank"><button class="bg-[#334E58] text-white p-2 w-[110px] rounded-md cursor-pointer">Try It <i class="fa-solid fa-arrow-right ml-2"></i></button></a>
+
+                <a href="https://github.com/Jayantaojha/Image-Search" target="_blank"><button class="bg-black text-white p-2 w-[110px] rounded-md cursor-pointer">GitHub</button></a>
             </div>
 
-            <div class="notification">
-                <div class="notification-header">
-                    <h3>New Message</h3>
-                    <span class="timestamp">Yesterday</span>
-                </div>
-                <p>Sed ultricies dui vitae faucibus convallis. Nulla facilisi. Integer eu nisi at ligula fringilla lacinia.</p>
+        </div>
+
+        <!-- project 3 -->
+        <div class="text-black bg-white flex flex-col w-[80vw] md:w-[25vw] rounded-md pb-3">
+
+            <div class="p-5 max-h-[40vh] overflow-hidden">
+                <img src="calc.jpg" class="rounded-lg">
+            </div>
+            <h2 class="text-center text-xl font-bold mb-2 mt-3">CALC</h2>
+            <p class="text-[#656253] p-3 text-center">🚀 Lifestyle, Finance, Education - All-in-One Calculator App.</p>
+            <div class="flex p-3 justify-around">
+                <a href="https://age-calculator-seven-omega.vercel.app/" target="_blank"><button class="bg-[#334E58] text-white p-2 w-[110px] rounded-md cursor-pointer">Try It <i class="fa-solid fa-arrow-right ml-2"></i></button></a>
+
+                <a href="https://github.com/Jayantaojha/CALC" target="_blank"><button class="bg-black text-white p-2 w-[110px] rounded-md cursor-pointer">GitHub</button></a>
             </div>
 
-            <div class="notification">
-                <div class="notification-header">
-                    <h3>New Message</h3>
-                    <span class="timestamp">Yesterday</span>
-                </div>
-                <p>Sed ultricies dui vitae faucibus convallis. Nulla facilisi. Integer eu nisi at ligula fringilla lacinia.</p>
+        </div>
+
+
+        <!-- project 4 -->
+        <div class="text-black bg-white flex flex-col w-[80vw] md:w-[25vw] rounded-md pb-3">
+
+            <div class="p-5 max-h-[40vh] overflow-hidden">
+                <img src="todo.jpg" class="rounded-lg">
+            </div>
+            <h2 class="text-center text-xl font-bold mb-2 mt-3">To Do List</h2>
+            <p class="text-[#656253] p-3 text-center">✨ Simple Task Management with HTML, CSS, and JavaScript.</p>
+            <div class="flex p-3 justify-around">
+                <a href="https://to-do-list-jayanta-ojha.netlify.app/" target="_blank"><button class="bg-[#334E58] text-white p-2 w-[110px] rounded-md cursor-pointer">Try It <i class="fa-solid fa-arrow-right ml-2"></i></button></a>
+
+                <a href="https://github.com/Jayantaojha/To-Do-List" target="_blank"><button class="bg-black text-white p-2 w-[110px] rounded-md cursor-pointer">GitHub</button></a>
             </div>
 
+        </div>
 
-            <div class="notification">
-                <div class="notification-header">
-                    <h3>New Message</h3>
-                    <span class="timestamp">Yesterday</span>
-                </div>
-                <p>Sed ultricies dui vitae faucibus convallis. Nulla facilisi. Integer eu nisi at ligula fringilla lacinia.</p>
+
+        <!-- project 5 -->
+        <div class="text-black bg-white flex flex-col w-[80vw] md:w-[25vw] rounded-md pb-3">
+
+            <div class="p-5 max-h-[40vh] overflow-hidden">
+                <img src="portfolio.jpg" class="rounded-lg">
+            </div>
+            <h2 class="text-center text-xl font-bold mb-2 mt-3">Portfolio</h2>
+            <p class="text-[#656253] p-3 text-center">Showcasing Creative Excellence.</p>
+            <div class="flex p-3 justify-around">
+                <a href="https://jayantaojha.github.io/Portfolio/disc/" target="_blank"><button class="bg-[#334E58] text-white p-2 w-[110px] rounded-md cursor-pointer">Try It <i class="fa-solid fa-arrow-right ml-2"></i></button></a>
+
+                <a href="https://github.com/Jayantaojha/Portfolio" target="_blank"><button class="bg-black text-white p-2 w-[110px] rounded-md cursor-pointer">GitHub</button></a>
             </div>
 
-            <!-- Add more notifications as needed -->
-        </section>
+        </div>
+
+
+         <!-- project 6 -->
+         <div class="text-black bg-white flex flex-col w-[80vw] md:w-[25vw] rounded-md pb-3">
+
+            <div class="p-5 max-h-[40vh] overflow-hidden">
+                <img src="game.jpg" class="rounded-lg">
+            </div>
+            <h2 class="text-center text-xl font-bold mb-2 mt-3">Game</h2>
+            <p class="text-[#656253] p-3 text-center">Blow Your Mind With Games.</p>
+            <div class="flex p-3 justify-around">
+                <a href="#" target="_blank"><button class="bg-[#334E58] text-white p-2 w-[110px] rounded-md cursor-pointer">Try It <i class="fa-solid fa-arrow-right ml-2"></i></button></a>
+
+                <a href="#" target="_blank"><button class="bg-black text-white p-2 w-[110px] rounded-md cursor-pointer">GitHub</button></a>
+            </div>
+
+        </div>
+
+
     </main>
 
 </body>
-
 </html>
