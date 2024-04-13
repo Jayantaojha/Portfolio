@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+</head>
+
+<body>
+
+    <a href="index.html">Home Page</a>
+
+    <script>
+        const body = document.querySelector('body');
+
+        function downloadPDF() {
+            let link = document.createElement('a');
+            link.href = 'resume.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+
+        document.addEventListener("DOMContentLoaded", () => {
+            let password = prompt("Authorise Access! Enter password: ");
+
+            if (password === '562004') {
+                downloadPDF();
+            }
+            else {
+                alert("Sorry, You Can't access it!");
+                window.location.href = 'index.html';
+            }
+
+        });
+
+    </script>
+</body>
+
+</html>
