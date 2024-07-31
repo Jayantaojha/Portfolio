@@ -1,41 +1,35 @@
 const body = document.querySelector('body');
 
 // for header text
-const headerElement = document.querySelector('#header-text');
-let headerText = `CODE ISN'T JUST ONES AND ZEROS; IT'S THE LANGUAGE THAT TURNS IDEAS INTO REALITY.`;
-let mainText = headerText.split(" ");
-let semicolonIndex = headerText.indexOf(";");
+const headerText = document.querySelector('#header-text');
 
-// Function to display text dynamically
-function displayDynamicText() {
-    headerElement.textContent = ""; // Clear existing text
-    let i = 0;
-    const intervalId = setInterval(() => {
-        if (i < mainText.length) {
-            showText(i);
-            i++;
-        } else {
-            clearInterval(intervalId);
-        }
-    }, 500);
-}
+const text = `CODE ISN'T JUST ONES AND ZEROS; IT'S THE LANGUAGE THAT TURNS IDEAS INTO REALITY.`;
 
-// Function to add words to the header text
-function showText(i) {
-    if (mainText[i].includes(";")) {
-        console.log(mainText[i]);
-        headerElement.innerText += ` ${mainText[i]} \n`;
-    } else {
-        headerElement.innerText += ` ${mainText[i]}`;
+let index = 0;
+
+function typeCharacter() {
+
+  if (index < text.length) {
+
+    if (index == 31) {
+      headerText.innerHTML += '<br>';
+      index++;
+      setTimeout(typeCharacter, 50);
     }
+    else {
+      headerText.innerHTML += text[index];
+      index++;
+      setTimeout(typeCharacter, 50); // Adjust the speed here
+    }
+
+  } else {
+    // Optionally add a blinking cursor at the end
+    headerText.innerHTML += '<span class="cursor"></span>';
+  }
+
 }
 
-// header text ends here
-
-
-
-// Event listener for when the DOM content is loaded
-window.addEventListener("DOMContentLoaded", displayDynamicText);
+document.addEventListener('DOMContentLoaded', typeCharacter);
 
 
 // for nevigation menu icon
